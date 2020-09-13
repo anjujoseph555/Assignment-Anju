@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/styles.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/b2b1ff1171.js" crossorigin="anonymous"></script>
+
+
+  <title></title>
+
+</head>
+
+<body>
+
+  <%  posts.forEach(function(post){ %>
+
+    <div class="wrapper">
+      <div class="box3">
+          <p style="color:blue;"><%=post.title%></p>
+        <br />
+        <p>
+        <%=post.content.substring(0, 400) + " ..."%>
+        <a href="/posts/<%=post._id%>">Read More</a>
+        </p>
+        <div class="row">
+          <div class="column1" style="text-align:left;">
+
+            <p  style="color:orange">Time</p>
+
+          </div>
+          <div class="column2">
+            <div class="container">
+              <div class="progress">
+                <div id="proBar" class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:;">
+                  <!-- <span  class="sr-only">70% Complete</span> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column3">
+            <div class="subcol3" onclick="mylikeFunction()">
+              <button class=" btn"><i class="far fa-thumbs-up fa-2x"></i></button>
+            </div>
+            <div class="subcol3" onclick="mydislikeFunction()">
+              <button class="btn"><i class="far fa-thumbs-down fa-2x"></i></button>
+            </div>
+          </div>
+        </div>
+
+    <% }) %>
+  </body>
+
+  </html>

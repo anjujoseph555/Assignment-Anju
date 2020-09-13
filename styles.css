@@ -1,0 +1,73 @@
+.wrapper{
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+.box1{
+  /* background: #fff; */
+  padding: 1rem;
+  height: 150px;
+  margin-top: 10px;
+}
+.box2{
+  background: #fff;
+  padding: 1rem;
+  height: 150px;
+   margin-top: 10px;
+  text-align: center;
+}
+.box3{
+  height: auto;
+  background: #fff;
+  padding: 1rem;
+  text-align: left;
+}
+.box4{
+   background: #fff;
+   padding: 1rem;
+   text-align: left;
+   margin-top: 60px;
+ }
+ .initialbutton{
+   text-align: left;
+   height: 40px;
+   width: 100%;
+ }
+ .userimg{
+   padding-left:10px;
+ }
+
+.headingbtn{
+  text-align: left;
+}
+/* Create three equal columns that floats next to each other */
+.column1{
+  float: left;
+  width: 60%;
+  padding: 10px;
+  height: 50px; /* Should be removed. Only for demonstration */
+}
+/* Create three equal columns that floats next to each other */
+.column2{
+  /* float:center; */
+  width: 25%;
+  padding: 10px;
+  height: 50px; /* Should be removed. Only for demonstration */
+}/* Create three equal columns that floats next to each other */
+.column3 {
+   display: grid;
+   grid-template-columns: 50% 50%;
+  float: center;
+  width: 15%;
+  padding: 10px;
+  height: 50px; /* Should be removed. Only for demonstration */
+}
+.subcol3{
+ width: 50%;
+ padding: 10px;
+}
+.userimg{
+ float: left;
+margin-right: 30px;
+
+}
